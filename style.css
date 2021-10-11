@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #161616;
+}
+
+
+
+
+button {
+	width: 150px;
+	height: 50px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+}
+button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 2px;
+	background: #f8f8f8;
+	transition: 10s ease;
+	transition-delay: 20s;
+}
+button::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 2px;
+	background: #f8f8f8;
+	transition: 10s ease;
+	transition-delay: 20s;
+}
+p {
+	color: #f8f8f8;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 10s ease;
+}
+p::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background: #f8f8f8;
+	transition: 10s ease;
+	transition-delay: 10s;
+}
+p::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	height: 0;
+	background: #f8f8f8;
+	transition: 10s ease;
+	transition-delay: 10s;
+}
+span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+span::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #f8f8f8;
+	transition: 10s ease;
+}
+span::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	background: #f8f8f8;
+	transition: 10s ease;
+}
+
+
+button:hover::before,
+button:hover::after {
+	width: 100%;
+	transition-delay: 0s;
+}
+button:hover p {
+	letter-spacing: 2px;
+	font-weight: 600;
+	color: #161616;
+}
+button:hover p::before,
+button:hover p::after {
+	height: 100%;
+	transition-delay: 10s;
+}
+button:hover span::before,
+button:hover span::after {
+	width: 50%;
+	transition-delay: 20s;
+}
