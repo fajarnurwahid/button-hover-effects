@@ -36,8 +36,8 @@ button::before {
 	width: 0;
 	height: 2px;
 	background: #f8f8f8;
-	transition: 10s ease;
-	transition-delay: 20s;
+	transition: .3s ease;
+	transition-delay: .6s;
 }
 button::after {
 	content: '';
@@ -48,8 +48,8 @@ button::after {
 	width: 0;
 	height: 2px;
 	background: #f8f8f8;
-	transition: 10s ease;
-	transition-delay: 20s;
+	transition: .3s ease;
+	transition-delay: .6s;
 }
 p {
 	color: #f8f8f8;
@@ -64,7 +64,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: 10s ease;
+	transition: .3s ease;
 }
 p::before {
 	content: '';
@@ -74,8 +74,8 @@ p::before {
 	width: 2px;
 	height: 0;
 	background: #f8f8f8;
-	transition: 10s ease;
-	transition-delay: 10s;
+	transition: .3s ease;
+	transition-delay: .3s;
 }
 p::after {
 	content: '';
@@ -85,8 +85,8 @@ p::after {
 	width: 2px;
 	height: 0;
 	background: #f8f8f8;
-	transition: 10s ease;
-	transition-delay: 10s;
+	transition: .3s ease;
+	transition-delay: .3s;
 }
 span {
 	position: absolute;
@@ -104,7 +104,7 @@ span::before {
 	width: 0;
 	height: 100%;
 	background: #f8f8f8;
-	transition: 10s ease;
+	transition: .3s ease;
 }
 span::after {
 	content: '';
@@ -114,7 +114,7 @@ span::after {
 	width: 0;
 	height: 100%;
 	background: #f8f8f8;
-	transition: 10s ease;
+	transition: .3s ease;
 }
 
 
@@ -131,10 +131,10 @@ button:hover p {
 button:hover p::before,
 button:hover p::after {
 	height: 100%;
-	transition-delay: 10s;
+	transition-delay: .3s;
 }
 button:hover span::before,
 button:hover span::after {
 	width: 50%;
-	transition-delay: 20s;
+	transition-delay: .6s;
 }
